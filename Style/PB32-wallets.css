@@ -1,0 +1,314 @@
+.logo {
+  width: 70%;
+}
+
+
+.logo-title {
+  font-size: 12px;
+  margin-top: -10px;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-title:hover {
+  text-decoration: none;
+}
+
+.wallet-support {
+  width: 100%;
+  max-width: var(--max-width);
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.wallet-support-heading {
+  text-align: center;
+  font-size: 3vw;
+  /* Scalable font size based on viewport width */
+  font-weight: 600;
+  margin-bottom: 2vw;
+  /* Scalable margin */
+  margin-top: 5vw;
+  background: linear-gradient(45deg, #0000ff, #1e90ff, #00bfff, #87ceeb, #b0e0e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+  .wallet-support-heading {
+    font-size: 5vw;
+    /* Larger font for tablets */
+    margin-top: 6vw;
+    margin-bottom: 3vw;
+  }
+}
+
+/* Media query for small screens (576px and below) */
+@media (max-width: 576px) {
+  .wallet-support-heading {
+    font-size: 6vw;
+    /* Larger heading font size for small screens */
+    margin-top: 8vw;
+    margin-bottom: 4vw;
+  }
+}
+
+
+.wallet-support-text {
+  display: block;
+  /* Change to block style */
+  text-align: center;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 1.2vw;
+  /* Smaller scalable font size */
+  font-weight: 200;
+  padding-bottom: 2vw;
+  margin: 0 auto;
+  /* Center block element */
+}
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+  .wallet-support-text {
+    font-size: 2.5vw;
+    /* Adjust text size for tablets */
+    padding-bottom: 3vw;
+  }
+}
+
+/* Media query for small screens (576px and below) */
+@media (max-width: 576px) {
+  .wallet-support-text {
+    font-size: 3.5vw;
+    /* Adjust text size for small screens */
+    padding-bottom: 4vw;
+  }
+}
+
+/* Additional media query for very small screens (400px and below) */
+@media (max-width: 400px) {
+  .wallet-support-text {
+    font-size: 4.5vw;
+    /* Further adjust text size for very small screens */
+    padding-bottom: 5vw;
+  }
+}
+
+
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+
+
+.item {
+  background-color: #1f1f1f;
+  padding: 10px;
+  height: 140px;
+  width: 140px;
+  object-fit: contain;
+  text-align: center;
+  border-radius: 8px;
+  /* Adjust the border radius for the entire item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex: 1 0 15%;
+  text-decoration: none;
+}
+
+.item:hover {
+  transform: scale(0.85);
+  cursor: pointer;
+}
+
+.item img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 45px;
+  /* Adjust the border radius for the image */
+  margin-bottom: 10px;
+}
+
+.wallet-text {
+  font-size: 12px;
+}
+
+/* Ensure that the link does not have underline */
+.item a {
+  text-decoration: none;
+}
+
+/* Remove underline from logo titles when hovered */
+.logo-title:hover {
+  text-decoration: none;
+  /* Ensure no underline on hover */
+}
+
+.info-tabs {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.info-tab {
+  background-color: #1f1f1f;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  height: 370px;
+  text-align: center;
+  padding-top: 50px;
+  background-color: black;
+}
+
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 3vw;
+  /* Scalable font size based on viewport width */
+  font-weight: 600;
+  padding: 2vw;
+  /* Scalable padding */
+  background: linear-gradient(45deg, #0000ff, #3e97f0, #1e51df, #840ab4, #d5e2e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 4.5vw;
+    /* Slightly larger font size for tablets */
+    padding: 3vw;
+  }
+}
+
+/* Media query for small screens (576px and below) */
+@media (max-width: 576px) {
+  .footer-text {
+    font-size: 5vw;
+    /* Larger font size for small screens */
+    padding: 4vw;
+    /* Increase padding for better spacing */
+  }
+}
+
+
+.footer-connect-box {
+  padding: 20px;
+}
+
+.third-connect-button {
+  background-color: #62d3ff;
+  color: black;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Smooth transition */
+}
+
+.third-connect-button:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Slight shadow on hover */
+}
+
+.third-connect-button:active {
+  transform: scale(0.95);
+  /* Slightly reduces the size to simulate a press */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  /* Reduces shadow on click */
+}
+
+.trademark {
+  padding-top: 1.5vw;
+  font-size: 1vw;
+  /* Scalable font size based on viewport width */
+}
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+  .trademark {
+    font-size: 2vw;
+    /* Larger font size for tablets */
+  }
+}
+
+/* Media query for small screens (576px and below) */
+@media (max-width: 576px) {
+  .trademark {
+    font-size: 3vw;
+    /* Larger font size for small screens */
+  }
+}
+
+
+.trademarkCo {
+  text-align: center;
+  font-size: 3vw;
+  /* Scalable font size */
+  font-weight: 600;
+  padding: 2vw;
+  /* Scalable padding */
+  background: linear-gradient(45deg, #0000ff, #3e97f0, #1e51df, #840ab4, #d5e2e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Style the trademark sign (optional) */
+.trademarkCo sup {
+  font-size: 0.6em;
+  /* Smaller size for the trademark */
+  vertical-align: super;
+  /* Align it properly */
+}
+
+.socials {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(4, 3%);
+  /* Four columns with 3% width */
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  gap: 10px;
+  /* Add gap between the icons */
+}
+
+.soc {
+  width: 80%;
+  /* Default width for smaller devices */
+}
+
+/* Media query for desktop screens (min-width: 768px) */
+@media (min-width: 768px) {
+  .soc {
+    width: 50%;
+    /* Smaller icon size on desktop */
+  }
+}

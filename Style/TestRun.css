@@ -1,0 +1,613 @@
+.wallet-support.modal-open {
+  opacity: 0.1;
+  /* Adjust opacity as desired */
+  pointer-events: none;
+  /* Prevent interaction with the section */
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #62d3ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #467e94;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 50%;
+  top: 50%;
+  /* Center vertically */
+  transform: translate(-50%, -50%);
+  /* Center horizontally and vertically */
+  width: 90%;
+  /* Use a percentage for responsive width */
+  max-width: 450px;
+  /* Maximum width for larger screens */
+  height: auto;
+  /* Height adjusts based on content */
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 20px;
+  /* Add some padding */
+  background-color: #1f1f1f;
+  /* Background color */
+}
+
+/* Optional: Add media queries for further adjustments */
+@media (max-width: 768px) {
+  .modal {
+    width: 80%;
+    /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .modal {
+    width: 95%;
+    /* Adjust width for mobile devices */
+  }
+}
+
+
+
+.modal-content {
+  background-color: #666670;
+  margin: auto;
+  padding: 10px;
+  /* border: 1px solid #272626; */
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.modal-content-top {
+  border-radius: 15px;
+}
+
+.close-section {
+  color: #161515;
+}
+
+.close,
+.second-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.second-close:hover,
+.second-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.second-close:hover,
+.second-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close-button,
+.second-close-button {
+  padding: 10px;
+  background-color: #3a3b3a;
+  border-radius: 10px;
+  color: #adb3ad;
+}
+
+.close-button:hover .second-close-button:hover {
+  background-color: #212421;
+}
+
+
+
+.connection-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+  border: 2px solid #09c228;
+  border-radius: 20px;
+  justify-content: space-between;
+
+}
+
+
+
+.flex-section-B {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+
+}
+
+.flex-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4a4a53;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+
+.modal-connection-status {
+  color: #09c228;
+  padding: 10px;
+  text-align: left;
+  flex-grow: 0;
+}
+
+.flex-section-A {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #242222;
+  align-items: flex-start;
+  /* Aligns items to the top, instead of center */
+  justify-content: flex-start;
+}
+
+.connection-box-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.modal-connection-status-2a {
+  flex: 1;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .modal-connection-status-2a {
+    font-size: 1.0em;
+    /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-connection-status-2a {
+    font-size: 1.0em;
+    /* Even smaller font size for mobile devices */
+  }
+}
+
+/* color: hsl(135, 36%, 96%);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  flex: 1;
+  font-weight: 400;
+  text-align: left;} */
+
+
+/* .newModalheader {
+  color: hsl(135, 36%, 96%);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  flex: 1;
+  font-weight: 400;
+} */
+
+.modal-connection-status-2b {
+  color: #b3a9a9;
+  font-size: 12px;
+  padding-bottom: 10px;
+  padding-top: 0;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.logo-content {
+  flex: 1;
+  justify-content: center;
+
+}
+
+.modal-logo,
+.modal-logo-2 {
+  border-radius: 20px;
+}
+
+
+.modal-connection-status-3a {
+  flex: 1;
+  text-align: center;
+  /* Center text alignment */
+  font-size: 1.0em;
+  /* Default font size */
+  color: #ada6a6;
+  /* Default text color */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .modal-connection-status-3a {
+    font-size: 1.0em;
+    /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-connection-status-3a {
+    font-size: 0.8em;
+    /* Even smaller font size for mobile devices */
+  }
+}
+
+
+.modal-connect-button-3b {
+  margin: 10px;
+  background-color: #08c427;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.modal-connect-button-3b:hover {
+  background-color: #329136;
+}
+
+
+
+.modal-connect-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-connect-button:hover {
+  background-color: #45a049;
+}
+
+
+
+.text-content {
+  flex: 5;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.text-content-2 {
+  flex: 2;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+.middle-space {
+  flex: 1;
+}
+
+
+
+.logo-content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-position: 50%;
+}
+
+.modal-logo {
+  width: 60px;
+  /* Adjust the size as needed */
+  height: auto;
+}
+
+.modal-logo-2 {
+  width: 60px;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.newModalheader {
+  color: #fcf8f8;
+  flex: 1;
+  font-size: 16px;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 30px;
+  padding-top: 25px;
+}
+
+
+
+
+input[type=password] {
+  width: 80%;
+  height: 45px;
+  margin: 15px;
+  box-sizing: border-box;
+  border: 2px solid rgb(175, 159, 159);
+  border-radius: 10px;
+  background-color: #333;
+  resize: none;
+  color: aliceblue;
+  padding-left: 5px;
+}
+
+
+.form-button {
+  width: 80%;
+  flex: 1;
+  background-color: #212421;
+  border: 1px solid #467e94;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0px 20px 20px 20px;
+}
+
+.form-button:hover {
+  background-color: rgb(27, 27, 27);
+}
+
+.form-button-container {
+  display: flex;
+  background-color: #333;
+}
+
+.form-note-1,
+.form-note-2,
+.form-note-3 {
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 1;
+  background-color: #333;
+}
+
+.form-note-1 {
+  color: #09c228;
+}
+
+.form-note-2 {
+  color: #d1bd07;
+}
+
+.form-note-3 {
+  color: #09c228;
+}
+
+
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form-slider {
+  display: none;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  opacity: 1;
+  justify-content: center;
+}
+
+.form-slider.active {
+  display: block;
+  opacity: 1;
+}
+
+.forms {
+  width: 100%;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  background-color: #333;
+}
+
+
+.form-header {
+  cursor: pointer;
+  flex: 1;
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+  transition: color 0.3s ease;
+  font-weight: 50;
+  font-size: 14px;
+}
+
+.form-header:hover {
+  color: white;
+}
+
+.form-header.active {
+  color: rgb(76, 201, 38);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.form-head {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  flex-direction: row;
+  background-color: #333;
+  align-items: center;
+}
+
+
+.third-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 50%;
+  top: 50%;
+  /* Center vertically */
+  transform: translate(-50%, -50%);
+  /* Center horizontally and vertically */
+  width: 90%;
+  /* Use a percentage for responsive width */
+  max-width: 450px;
+  /* Maximum width for larger screens */
+  height: auto;
+  /* Height adjusts based on content */
+  background-color: #363232;
+  /* Adjusted opacity for better visibility */
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 20px;
+  /* Add some padding */
+}
+
+/* Optional: Add media queries for further adjustments */
+@media (max-width: 768px) {
+  .third-modal {
+    width: 80%;
+    /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .third-modal {
+    width: 95%;
+    /* Adjust width for mobile devices */
+  }
+}
+
+
+.third-modal-content {
+  background-color: #666670;
+  margin: auto;
+  padding: 10px;
+  /* border: 1px solid #272626; */
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.second-close {
+  color: #0c0c0c;
+}
+
+
+textarea {
+  width: 90%;
+  height: 130px;
+  /* margin: 25px; */
+  box-sizing: border-box;
+  border: 2px solid rgb(175, 159, 159);
+  border-radius: 10px;
+  background-color: #333;
+  resize: none;
+  justify-content: center;
+  color: rgb(234, 240, 240);
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#key {
+  height: 50px;
+}
+
+/* Spinner and processing message styles */
+.fa-spinner {
+  font-size: 24px;
+  /* Adjust size as needed */
+  color: rgb(44, 185, 16);
+  /* Match this with your theme */
+  margin-right: 10px;
+  /* Space between spinner and text */
+}
+
+.form-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* Adjust based on your layout */
+}
+
+/* Custom Alert Modal Styles */
+.custom-alert {
+
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.custom-alert-content {
+  background-color: #272424;
+  margin: 10% auto;
+  padding: 5px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  transition: opacity 0.s ease, visibility 0.5s ease;
+}
+
+.custom-alert p {
+  font-size: 14px;
+  color: #f5f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 10px;
+  background-color: #10dd10;
+  border-radius: 4px;
+  transition: width 0.1s ease;
+}

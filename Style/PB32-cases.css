@@ -1,0 +1,139 @@
+.cases {
+  display: flex;
+  flex-direction: row;
+  /* Default to row layout */
+  align-items: center;
+  /* Align items to the start of the container */
+  flex-wrap: wrap;
+  /* Allow wrapping to new lines if needed */
+}
+
+.case-item-container,
+.case-item-container-2 {
+  flex: 1;
+  background-color: #1f1f1f;
+  margin: 15px;
+  padding: 10px;
+  height: 140px;
+  width: calc(33.333% - 30px);
+  /* Adjust width to fit three items per row with margins */
+  object-fit: contain;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.case-item-header {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 15px;
+  background: linear-gradient(45deg, #0000ff, #3e97f0, #1e51df, #840ab4, #d5e2e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.case-item {
+  font-size: 14px;
+  font-weight: 200;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.case-item-container:hover,
+.case-item-container-2:hover {
+  transform: translateY(-10px);
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .case-item-header {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-item-header {
+    font-size: 17px;
+  }
+
+  .case-item {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 612px) {
+  .case-item {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cases {
+    flex-direction: column;
+    /* Switch to column layout on small screens */
+    align-items: stretch;
+    /* Stretch items to fill the container */
+  }
+
+  .case-item-container,
+  .case-item-container-2 {
+    align-self: center;
+    width: 80%;
+    /* Full width for each item in column layout */
+    margin: 15px 0;
+    /* Adjust margin for column layout */
+  }
+}
+
+
+.case-statement {
+  color: var(--theme-dimLight);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: linear-gradient(45deg, #0000ff, #1e90ff, #00bfff, #87ceeb, #b0e0e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  /* Default font size for larger screens */
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .case-statement {
+    font-size: 1.4rem;
+    /* Slightly smaller font size for smaller screens */
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .case-statement {
+    font-size: 1.2rem;
+    /* Smaller font size */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-statement {
+    font-size: 1rem;
+    /* Even smaller font size */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .case-statement {
+    font-size: 0.9rem;
+    /* Further reduced font size */
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
