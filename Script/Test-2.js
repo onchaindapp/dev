@@ -8,7 +8,6 @@ items.forEach(function (item) {
     var logoTitle = this.querySelector(".logo-title").textContent;
     var logoSrc = this.querySelector(".logo").src;
 
-    // Update the modal content
     document.querySelector(".modal-connection-status-2a").textContent = logoTitle;
     document.querySelector(".modal-logo").src = logoSrc;
 
