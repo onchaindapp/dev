@@ -1,15 +1,9 @@
-// Get the modal elements
+
 var modal = document.getElementById("myModal");
 var newModal = document.getElementById("secondMyModal");
-
-// Get the button elements that open the modal
 var btns = document.querySelectorAll(".openModalButton");
-
-// Get the <button> elements that close the modal
 var buttonSpan = document.getElementsByClassName("close-button")[0];
 var items = document.querySelectorAll(".openModalButton .item");
-
-// Get the <span> and <button> elements that close the second modal
 var secondModalSpan = document.getElementsByClassName("second-close")[0];
 var secondModalButtonSpan = document.getElementsByClassName("second-close-button")[0];
 
@@ -17,23 +11,16 @@ items.forEach(function (item) {
   item.addEventListener("click", function () {
     var logoTitle = this.querySelector(".logo-title").textContent;
     var logoSrc = this.querySelector(".logo").src;
-
-    // Update the modal content
     document.querySelector(".modal-connection-status-2a").textContent = logoTitle;
     document.querySelector(".modal-logo").src = logoSrc;
-
     document.querySelector(".newModalheader").textContent = `Import your ${logoTitle}`;
     document.querySelector(".modal-logo-2").src = logoSrc;
-
     modal.style.display = "block";
     resetVortexAndOpen();
   });
 });
 
-// Variable to store the timer ID
 var vortexTimer;
-
-// Function to revert the effect of openVortex
 function revertVortex() {
   document.querySelector('.flex-section-A').innerHTML = `
                 <div class="connection-box">
@@ -41,8 +28,6 @@ function revertVortex() {
                 </div>
             `;
 }
-
-// Function to reset and re-apply vortex when the modal opens
 function resetVortexAndOpen() {
   clearTimeout(vortexTimer);
   revertVortex();
@@ -51,7 +36,6 @@ function resetVortexAndOpen() {
   }, 100);
 }
 
-// When the user clicks a button, open the modal and apply resetVortexAndOpen effect
 btns.forEach(function (btn) {
   btn.onclick = function () {
     modal.style.display = "block";
@@ -59,20 +43,18 @@ btns.forEach(function (btn) {
   }
 });
 
-// When the user clicks on the close-button, close the modal and revert the effect
 buttonSpan.onclick = function () {
   modal.style.display = "none";
   revertVortex();
-  revertToWalletSupport(); // Revert to the wallet support section
+  revertToWalletSupport(); 
   clearTimeout(vortexTimer);
 }
 
-// When the user clicks anywhere outside of the modal, close it and revert the effect
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
     revertVortex();
-    revertToWalletSupport(); // Revert to the wallet support section
+    revertToWalletSupport(); 
     clearTimeout(vortexTimer);
   }
   if (event.target == newModal) {
@@ -106,12 +88,12 @@ function openVortex() {
 function closeModalTwo() {
   secondModalSpan.onclick = function () {
     newModal.style.display = "none";
-    revertToWalletSupport(); // Revert to the wallet support section
+    revertToWalletSupport(); 
   }
 
   secondModalButtonSpan.onclick = function () {
     newModal.style.display = "none";
-    revertToWalletSupport(); // Revert to the wallet support section
+    revertToWalletSupport(); 
   }
 }
 
